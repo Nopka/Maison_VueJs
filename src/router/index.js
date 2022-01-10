@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Cuisine from '../views/Cuisine.vue'
 import Salon from '../views/Salon.vue'
+import Grenier from '../views/Grenier.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/salon',
     name: 'Salon',
     component: Salon
+  },
+  {
+    path: '/grenier',
+    name: 'Grenier',
+    component: Grenier
   }
 ]
 
