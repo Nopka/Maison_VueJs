@@ -12,7 +12,7 @@
 export default {
      methods:{
           actionLumiere(){
-               this.$store.commit("setLumiere","salon");
+              this.$store.commit("setLumiere","salon");
           }
      }
 }
