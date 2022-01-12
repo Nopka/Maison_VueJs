@@ -4,12 +4,12 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/cuisine">Cuisine</router-link> |
       <router-link to="/salon">Salon</router-link> |
-      <router-link to="/grenier">Grenier</router-link>
+      <router-link to="/grenier">Grenier</router-link> |
+      <router-link to="/chambre">Chambre</router-link>
     </div>
     <router-view/>
   </div>
 </template>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -30,5 +30,8 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+img{
+  width: 500px;
 }
 </style>

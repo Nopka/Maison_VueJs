@@ -1,7 +1,7 @@
 <template>
-  <div class="salon" :class="{'lumiere': $store.state.lumieres.salon}">
-    <h1>Voici le salon</h1>
-    <img src="../assets/salon.jpg" alt="salon">
+  <div class="chambre" :class="{'lumiere': $store.state.lumieres.chambre}">
+    <h1>Voici la Chambre</h1>
+    <img src="../assets/chambre.jpg" alt="salon">
     <button @click="actionLumiere">Lumieres</button>
   </div>
 </template>
@@ -9,13 +9,13 @@
 export default {
      methods:{
           actionLumiere(){
-               this.$store.commit("setLumiere","salon");
+               this.$store.commit("setLumiere","chambre");
           }
      }
 }
 </script>
 <style scoped>
-     .salon{
+     .chambre{
           background-color: black;
      }
      .lumiere{
