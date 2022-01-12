@@ -1,5 +1,8 @@
 <template>
   <div class="genier">
+    <div id="nav">
+      <router-link to="/">Home</router-link>
+    </div>
     <h1>Voici le Grenier</h1>
     <img src="../assets/grenier.jpg" alt="salon">
   </div>

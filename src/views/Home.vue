@@ -1,6 +1,16 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/cuisine">Cuisine</router-link> |
+      <router-link to="/salon">Salon</router-link> |
+      <router-link to="/grenier">Grenier</router-link> |
+      <router-link to="/chambre">Chambre</router-link>
+    </div>
+    <div id="interrupteurs">
+      <button @click="interragirLumiere('chambre')">Allumer dans la Chambre</button> <br>
+      <button @click="interragirLumiere('salon')">Allumer dans le Salon</button>
+    </div>
   </div>
 </template>
 
@@ -9,6 +19,12 @@
 export default {
   name: 'Home',
   components: {
+  },
+  methods: {
+    interragirLumiere(piece){
+      this.$store.commit("setLumiere",piece);
+    }
   }
 }
 </script>
+

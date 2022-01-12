@@ -1,12 +1,5 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/cuisine">Cuisine</router-link> |
-      <router-link to="/salon">Salon</router-link> |
-      <router-link to="/grenier">Grenier</router-link> |
-      <router-link to="/chambre">Chambre</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
